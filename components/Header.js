@@ -75,7 +75,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <image id="image0" width="256" height="256" x="0" y="0"
+                <image id="image0" width="24" height="24" x="0" y="0"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA
 CXBIWXMAAAsTAAALEwEAmpwYAAB/OUlEQVR42u19d8BsRXn+MzOnbPnqbVzupdsxUWM3xthrjMEo
