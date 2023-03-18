@@ -1,6 +1,6 @@
 const BLOG = {
   title: 'AntDock 博客',
-  author: '张哲涵 Eric Zhang',
+  author: '张哲涵',
   email: 'ericzhang@antdock.cn',
   link: 'https://antdock.cn',
   description: '读书、思考、淦。',
