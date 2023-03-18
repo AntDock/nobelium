@@ -3,7 +3,7 @@ const BLOG = {
   author: '张哲涵',
   email: 'ericzhang@antdock.cn',
   link: 'https://antdock.cn',
-  description: 'thinking differently as always',
+  description: 'thinking different(ly) as always.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
