@@ -1,9 +1,9 @@
 const BLOG = {
-  title: 'AntDock 博客',
+  title: 'AntDock',
   author: '张哲涵',
   email: 'ericzhang@antdock.cn',
   link: 'https://antdock.cn',
-  description: '读书、思考、淦。',
+  description: 'thinking differently as always',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
