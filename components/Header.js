@@ -8,7 +8,7 @@ const NavBar = () => {
   const links = [
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
     { id: 1, name: "朋友圈", to: 'https://s.antdock.cn', show: true },
-    { id: 2, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
+    { id: 2, name: locale.NAV.ABOUT, to: '/about-me', show: BLOG.showAbout },
     { id: 3, name: locale.NAV.RSS, to: '/feed', show: false },
     { id: 4, name: locale.NAV.SEARCH, to: '/search', show: true }
   ]
