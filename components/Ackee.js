@@ -6,7 +6,7 @@ const Ackee = ({ ackeeServerUrl, ackeeDomainId }) => {
   useAckee(
     router.asPath,
     { server: ackeeServerUrl, domainId: ackeeDomainId },
-    { detailed: false, ignoreLocalhost: true }
+    { detailed: true, ignoreLocalhost: true }
   )
   return null
 }
