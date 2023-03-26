@@ -47,7 +47,7 @@ const SearchLayout = ({ tags, posts, currentTag }) => {
       />
       <div className="article-container my-8">
         {!filteredBlogPosts.length && (
-          <p className="text-gray-500 dark:text-gray-300">No posts found.</p>
+          <p className="text-gray-500 dark:text-gray-300">一片苍茫荒原，不见文章。</p>
         )}
         {filteredBlogPosts.slice(0, 20).map(post => (
           <BlogPost key={post.id} post={post} />
