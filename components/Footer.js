@@ -14,7 +14,7 @@ const Footer = ({ fullWidth }) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-            © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`} ｜ <a href="https://antdock.statuspage.io">服务状态</a> ｜ <a href="https://antdock.cn/privacy-policy">隐私政策</a>
+            © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`} ｜ <a href="https://antdock.statuspage.io">状态</a> ｜ <a href="https://antdock.cn/privacy-policy">隐私</a>
           </p>
           <Vercel />
         </div>
