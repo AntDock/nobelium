@@ -25,6 +25,7 @@
     "dayjs": "^1.11.7",
     "feed": "^4.2.2",
     "gitalk": "^1.7.2",
+    "mermaid": "^10.0.2",
     "next": "^13.2.4",
     "notion-client": "^6.16.0",
     "notion-utils": "^6.16.0",
@@ -49,5 +50,11 @@
   "bugs": {
     "url": "https://github.com/craigary/nobelium/issues",
     "email": "i@craigary.net"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "react-notion-x@6.16.0": "patches/react-notion-x@6.16.0.patch",
+      "notion-utils@6.16.0": "patches/notion-utils@6.16.0.patch"
+    }
   }
 }
