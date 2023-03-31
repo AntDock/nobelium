@@ -1,7 +1,7 @@
 const BLOG = {
   title: 'AntDock',
   author: '张哲涵',
-  email: 'ericzhang@antdock.cn',
+  email: 'antdock@qq.com',
   link: 'https://antdock.cn',
   description: 'thinking different(ly) as always.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
