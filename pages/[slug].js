@@ -1,15 +1,18 @@
+import { clientConfig } from '@/lib/server/config'
+
 import { useRouter } from 'next/router'
 import cn from 'classnames'
 import { getAllPosts, getPostBlocks } from '@/lib/notion'
 import { useLocale } from '@/lib/locale'
-import BLOG from '@/blog.config'
+import { useConfig } from '@/lib/config'
 import { createHash } from 'crypto'
 import Container from '@/components/Container'
 import Post from '@/components/Post'
 import Comments from '@/components/Comments'
 
-const BlogPost = ({ post, blockMap, emailHash }) => {
+export default function BlogPost ({ post, blockMap, emailHash }) {
   const router = useRouter()
+  const BLOG = useConfig()
   const locale = useLocale()
 
   // TODO: It would be better to render something
@@ -35,10 +38,12 @@ const BlogPost = ({ post, blockMap, emailHash }) => {
       />
 
       {/* Back and Top */}
-      <div className={cn(
-        'px-4 flex justify-between font-medium text-gray-500 dark:text-gray-400 my-5',
-        fullWidth ? 'md:px-24' : 'mx-auto max-w-2xl',
-      )}>
+      <div
+        className={cn(
+          'px-4 flex justify-between font-medium text-gray-500 dark:text-gray-400 my-5',
+          fullWidth ? 'md:px-24' : 'mx-auto max-w-2xl'
+        )}
+      >
         <a>
           <button
             onClick={() => router.push(BLOG.path || '/')}
@@ -49,7 +54,10 @@ const BlogPost = ({ post, blockMap, emailHash }) => {
         </a>
         <a>
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            })}
             className="mt-2 cursor-pointer hover:text-black dark:hover:text-gray-100"
           >
             ↑ {locale.POST.TOP}
@@ -65,7 +73,7 @@ const BlogPost = ({ post, blockMap, emailHash }) => {
 export async function getStaticPaths () {
   const posts = await getAllPosts({ includePages: true })
   return {
-    paths: posts.map(row => `${BLOG.path}/${row.slug}`),
+    paths: posts.map(row => `${clientConfig.path}/${row.slug}`),
     fallback: true
   }
 }
@@ -78,7 +86,7 @@ export async function getStaticProps ({ params: { slug } }) {
 
   const blockMap = await getPostBlocks(post.id)
   const emailHash = createHash('md5')
-    .update(BLOG.email)
+    .update(clientConfig.email)
     .digest('hex')
     .trim()
     .toLowerCase()
@@ -88,5 +96,3 @@ export async function getStaticProps ({ params: { slug } }) {
     revalidate: 1
   }
 }
-
-export default BlogPost
