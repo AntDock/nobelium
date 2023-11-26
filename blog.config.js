@@ -1,7 +1,7 @@
 const BLOG = {
   title: 'Ant Blog By ZhehanZ',
   author: '张哲涵',
-  email: 'me@zheha.nz',
+  email: '2265546660@qq.com',
   link: 'https://ant.zhehanz.com',
   description: 'thinking different(ly) as always.',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
