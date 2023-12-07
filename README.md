@@ -1,3 +1,11 @@
+**⚠️ Please Note: This is a forked (copied) repo for my personal use. Some functions may be customized beyond the original project, but the pace of updates are usually slower. I would *not* suggest forking my repo into production. If you like some of the additional functions, please provide feedback using Issues. I will consider contributing it to the original repo (I do this regularly). Below is a copy of the original repo's README file.**
+
+🔗 Link to Original: https://github.com/craigary/nobelium
+
+👀 Main Changes: Customization, Config Setup
+
+----
+
 <img src="https://cdn.statically.io/gh/craigary/nobelium/main/Nobelium-Logo.svg" width="50" height="50">
 
 # Nobelium
